@@ -1,0 +1,297 @@
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #E6D6FF;
+    color: #333333;
+}
+
+/* ===== CABEÇALHO DA LOJA ===== */
+
+header {
+    background-color: #d63384;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header > a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ===== LINKS DE NAVEGAÇÃO ===== */
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Esconde o botão antigo, caso ainda esteja no HTML */
+#btn-menu {
+    display: none;
+}
+
+
+/* ===== VITRINE DE PRODUTOS ===== */
+
+.vitrine {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    padding: 20px;
+}
+
+.produto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+}
+
+.produto h3 {
+    margin-bottom: 8px;
+}
+
+.produto p {
+    font-weight: bold;
+}
+
+/* ===== FORMULÁRIO DE FRETE ===== */
+
+#frete {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+#frete h2 {
+    color: #8a42c2;
+    text-align: center;
+    margin-top: 0;
+}
+
+#frete > p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+#form-frete .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+#form-frete label {
+    font-weight: bold;
+}
+
+#total-carrinho {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c9b3e8;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#form-frete button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8a42c2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-frete button:hover {
+    background-color: #7132a3;
+}
+
+#resultado-frete {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #7132a3;
+    margin-top: 20px;
+}
+
+
+/* ===== FORMULÁRIO DE CONTATO ===== */
+
+#contato {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+#contato h2 {
+    color: #8a42c2;
+    text-align: center;
+    margin-top: 0;
+}
+
+#contato > p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+#form-contato .campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+#form-contato label {
+    font-weight: bold;
+}
+
+#form-contato input,
+#form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c9b3e8;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+#form-contato textarea {
+    resize: vertical;
+}
+
+#form-contato button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8a42c2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-contato button:hover {
+    background-color: #7132a3;
+}
+
+#resultado-contato {
+    color: #7132a3;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* ===== FORMULÁRIOS LADO A LADO ===== */
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 25px;
+}
+
+/* Mantém a apresentação e os produtos ocupando a largura toda */
+#inicio,
+#produtos {
+    grid-column: 1 / -1;
+}
+
+/* Os dois formulários ficam alinhados */
+#frete,
+#contato {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+/* Adaptação para telas menores */
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    #inicio,
+    #produtos,
+    #frete,
+    #contato {
+        grid-column: 1;
+    }
+}
+
+
+/* ===== RODAPÉ DA LOJA ===== */
+
+footer {
+    background-color: #d63384;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+

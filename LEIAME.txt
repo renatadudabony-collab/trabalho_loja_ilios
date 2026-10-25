@@ -1,0 +1,28 @@
+```text
+PROJETO: ÍLIOS JEANS
+
+1. SOBRE O PROJETO
+A Ílios Jeans é uma loja virtual demonstrativa de calças jeans, desenvolvida como trabalho acadêmico. O projeto apresenta produtos, cálculo de frete e formulário de contato.
+
+2. TECNOLOGIAS UTILIZADAS
+- HTML5: estruturação do conteúdo da página.
+- CSS3: estilização e adaptação para diferentes tamanhos de tela.
+- JavaScript: cálculo do frete e validação do formulário de contato.
+
+3. COMO EXECUTAR O PROJETO
+1. Baixe ou copie os arquivos do projeto para uma pasta no computador.
+2. Abra a pasta no Visual Studio Code.
+3. Abra o arquivo index.html usando um navegador ou a extensão Live Server.
+
+4. FUNCIONALIDADES
+- Vitrine com seis produtos.
+- Imagens com descrições alternativas.
+- Cálculo de frete com base no valor da compra.
+- Frete grátis para compras de R$ 200,00 ou mais.
+- Frete de R$ 20,00 para compras abaixo de R$ 200,00.
+- Formulário de contato com validação em JavaScript.
+- Layout responsivo para diferentes tamanhos de tela.
+
+5. OBSERVAÇÃO
+Este projeto tem finalidade educacional. O formulário é demonstrativo e não envia mensagens por e-mail. Os valores de frete são fictícios.
+```

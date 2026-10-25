@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- ===== CONFIGURAÇÕES DA PÁGINA ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ílios Jeans | Sua loja de jeans</title>
+
+    <!-- Conexão com CSS e JavaScript -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ===== CABEÇALHO E NAVEGAÇÃO ===== -->
+    <header>
+        <a href="#inicio">Ílios Jeans</a>
+
+        <!-- Links de navegação -->
+        <nav id="menu" class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#frete">Calcular frete</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main>
+
+      
+<!-- ===== APRESENTAÇÃO DA LOJA ===== -->
+<section id="inicio">
+    <h1>Seu estilo começa aqui!</h1>
+    <p>Encontre o jeans perfeito para você, com conforto e personalidade.</p>
+</section>
+
+
+
+                <!-- ===== VITRINE DE PRODUTOS ===== -->
+        <section id="produtos">
+
+            <h2>Nossos produtos</h2>
+            <p>Confira nossa coleção de jeans!</p>
+
+            <div class="vitrine">
+
+                <!-- Produto 1 -->
+                <article class="produto">
+                    <img src="produto1_skinny.jpg" alt="Calça jeans skinny azul">
+                    <h3>Calça Skinny</h3>
+                    <p>R$ 119,90</p>
+                </article>
+
+                <!-- Produto 2 -->
+                <article class="produto">
+                    <img src="produto2_reta.jpg" alt="Calça jeans reta azul">
+                    <h3>Calça Reta</h3>
+                    <p>R$ 129,90</p>
+                </article>
+
+                <!-- Produto 3 -->
+                <article class="produto">
+                    <img src="produto3_wide_leg.jpg" alt="Calça jeans wide leg">
+                    <h3>Calça Wide Leg</h3>
+                    <p>R$ 139,90</p>
+                </article>
+
+                <!-- Produto 4 -->
+                <article class="produto">
+                    <img src="produto4_mom.jpg" alt="Calça jeans mom">
+                    <h3>Calça Mom</h3>
+                    <p>R$ 124,90</p>
+                </article>
+
+                <!-- Produto 5 -->
+                <article class="produto">
+                    <img src="produto5_cintura_alta.jpg" alt="Calça jeans de cintura alta">
+                    <h3>Calça Cintura Alta</h3>
+                    <p>R$ 134,90</p>
+                </article>
+
+                <!-- Produto 6 -->
+                <article class="produto">
+                    <img src="produto6_pantalona.jpg" alt="Calça jeans pantalona">
+                    <h3>Calça Pantalona</h3>
+                    <p>R$ 149,90</p>
+                </article>
+
+            </div>
+
+        </section>
+
+                <!-- ===== CALCULADORA DE FRETE ===== -->
+        <section id="frete">
+
+            <h2>Calcule seu frete</h2>
+            <p>Informe seu CEP para consultar o valor estimado da entrega.</p>
+
+            <form id="form-frete">
+
+                <div class="campo">
+
+               
+                <label for="total-carrinho">Valor total da compra (R$):</label>
+                <input
+                type="number"
+                id="total-carrinho"
+                name="total-carrinho"
+                placeholder="Ex.: 150"
+                min="0.01"
+                step="0.01"
+                required>
+
+
+                </div>
+
+                <button type="submit">Calcular frete</button>
+
+                <p id="resultado-frete" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+                <!-- ===== FORMULÁRIO DE CONTATO ===== -->
+        <section id="contato">
+
+            <h2>Entre em contato</h2>
+            <p>Envie sua mensagem para a Ílios Jeans.</p>
+
+            <form id="form-contato">
+
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        required
+                        minlength="3">
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        rows="5"
+                        required
+                        minlength="5"></textarea>
+                </div>
+
+                <button type="submit">Enviar mensagem</button>
+
+                <p id="resultado-contato" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+    </main>
+
+    <!-- ===== RODAPÉ DA LOJA ===== -->
+    <footer>
+        <p>Ílios Jeans — Moda, conforto e estilo!</p>
+        <p>Entre em contato: contato@iliosjeans.com.br</p>
+        <p>&copy; 2026 Ílios Jeans. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+
+</body>
+</html>
+
